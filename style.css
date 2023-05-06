@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    color: #fff;
+    position:fixed;
+  width: 100%;
+    padding: 20px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .hamburger {
+    display: none;
+  }
+  
+  .hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  
+  
+  
+
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside{
+    background: linear-gradient(to bottom, #f19d1f, #9a2a08);
+    padding: 20px;
+    flex: 30%;
+}
+.title{
+    margin-left: 30px;
+}
+p{
+    text-align: justify;
+    margin: 30px;
+}
+h2{
+    text-align: center;
+}
+section{
+    background:linear-gradient(to bottom, #7af11f, #5fd5cf);
+    padding: 20px;
+    flex: 70%;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #ffff37;
+}
+
+
+ .N1{
+    background:linear-gradient(to bottom, #8964e7, #d780ef); 
+    padding: 20px;
+    flex: 30%;
+}
+.N2{
+    background: linear-gradient(to bottom, #f11f54, #cfd55f);
+    padding: 20px;
+    flex: 30%;
+}
+.N3{
+    background: linear-gradient(to bottom, #f11fdf, #fc0101);
+    padding: 20px;
+    flex: 30%;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    margin: auto;
+}
+
+@media screen and (max-width: 821px) {
+    main {
+        flex-direction: column;
+    }
+
+    nav {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background-color: #222;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+    
+      nav a {
+        margin: 10px 0;
+      }
+    
+      .hamburger {
+        display: block;
+        cursor: pointer;
+      }
+    
+      .active {
+        display: flex;
+      }
+    
+      .hamburger span:nth-child(2) {
+        transform-origin: center;
+      }
+    
+      .hamburger span:nth-child(1).active {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+    
+      .hamburger span:nth-child(2).active {
+        transform: scale(0);
+      }
+    
+      .hamburger span:nth-child(3).active {
+        transform: rotate(-45deg) translate(5px, -5px);
+      }
+}
+
+
+  
